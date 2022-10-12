@@ -19,11 +19,15 @@ body {
     flex: 1;
 }
 
-.row {
+.gridItem {
     margin: 2px;
     min-height: 2rem;
     min-width: 2rem;
     background-color: chocolate;
     text-align: center;
+}
+
+.gridItemHover {
+    background-color: yellow;
 }
 
