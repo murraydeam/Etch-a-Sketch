@@ -1,0 +1,12 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.etchContainer {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 0;
+  padding: 0;
+}
