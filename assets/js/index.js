@@ -1,14 +1,22 @@
 let columns = 16;
 let gridItems = 16;
-
-const resetButton = document.createElement('button')
-resetButton.setAttribute('id', 'resetButton')
-
-
-
+let button = document.createElement("button");
+button.textContent = "Grid Size";
+document.querySelector(".etchContainer").appendChild(button);
+button.onclick = function () {
+  size = prompt("Enter your desired grid size. \nMax size is 100.");
+};
 
 let grid = document.createElement("div");
 grid.setAttribute("id", "grid");
+
+function randomColor() {
+  let color = [];
+  for (let i = 0; i < 3; i++) {
+    color.push(Math.floor(Math.random() * 256));
+  }
+  return "rgb(" + color.join(", ") + ")";
+}
 
 for (let i = 0; i < columns; ++i) {
   let column = document.createElement("div");
@@ -18,12 +26,10 @@ for (let i = 0; i < columns; ++i) {
     gridItem.className = "gridItem";
     gridItem.addEventListener("mouseover", mouseOver);
     function mouseOver() {
-      gridItem.style.backgroundColor = "red";
+      gridItem.style.backgroundColor = randomColor();
     }
-
     column.appendChild(gridItem);
   }
-
   grid.appendChild(column);
 }
 

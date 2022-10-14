@@ -12,22 +12,23 @@ body {
 }
 
 #grid {
-    display: flex;
+  display: flex;
+  max-width: 60rem;
+  padding: 32px;
 }
 
 .column {
-    flex: 1;
+  flex: 1;
 }
 
 .gridItem {
-    margin: 2px;
-    min-height: 2rem;
-    min-width: 2rem;
-    background-color: chocolate;
-    text-align: center;
+  margin: 2px;
+  min-height: 2rem;
+  min-width: 2rem;
+  background-color: chocolate;
+  text-align: center;
 }
 
 .gridItemHover {
-    background-color: yellow;
+  background-color: yellow;
 }
-
