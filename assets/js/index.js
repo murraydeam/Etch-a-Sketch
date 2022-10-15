@@ -1,8 +1,11 @@
-let columns = 16;
-let gridItems = 16;
+size = 16
+
+
+let columns = size;
+let gridItems = size;
 let button = document.createElement("button");
 button.textContent = "Grid Size";
-document.querySelector(".etchContainer").appendChild(button);
+// document.querySelector(".etchContainer").appendChild(button);
 button.onclick = function () {
   size = prompt("Enter your desired grid size. \nMax size is 100.");
 };
